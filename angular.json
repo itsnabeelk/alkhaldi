@@ -25,17 +25,37 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/style2.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/all.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/swiper-bundle.min.css",
+              "src/assets/css/magnific-popup.css",
+              "src/assets/css/meanmenu.min.css",
+              "src/assets/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-3.6.0.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/jquery.counterup.min.js",
+              "src/assets/js/popper.min.js",
+              "src/assets/js/progressbar.min.js",
+              "src/assets/js/jquery.magnific-popup.min.js",
+              "src/assets/js/swiper-bundle.min.js",
+              "src/assets/js/isotope.pkgd.min.js",
+              "src/assets/js/jquery.waypoints.min.js",
+              "src/assets/js/jquery.meanmenu.min.js",
+              "src/assets/js/custom.js"
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "4mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -91,5 +111,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "4925e4df-710f-421d-8543-fdf201955648"
   }
 }

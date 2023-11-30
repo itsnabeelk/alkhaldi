@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+a{
+    cursor: pointer !important;
+}
+a:hover{
+    cursor: pointer !important;
+}
+
+.banner-video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .banner-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width:680px) {
+    .spotlight__heading {
+      padding: 35px;
+  }
+  .spotlight__heading h2 {
+    font-size: 28px !important;
+    margin-bottom: 15px !important;
+}
+.spotlight__heading p {
+  font-size: 14px;
+  max-width: 350px;
+}
+  }

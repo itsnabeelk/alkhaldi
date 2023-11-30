@@ -1,0 +1,33 @@
+.footer__one-shape {
+    z-index: 9;
+}
+.menu-overlay__close {
+    z-index: 99;
+}
+.header__logo {
+    z-index: 9999;
+    position: relative;
+}
+.menu-overlay .accordion {
+    margin-bottom: 20px;
+    z-index: 999;
+    position: sticky;
+}
+
+.menu-overlay .header__logo {
+    margin-bottom: 60px;
+}
+.header {
+    padding-top: 18px;
+    padding-bottom: 25px;
+}
+.header-logo-dark{
+    display: none;
+}
+.sticky-header .header-logo-dark{
+    display: block !important;
+}
+
+.sticky-header .header-logo-light{
+    display: none !important;
+}
