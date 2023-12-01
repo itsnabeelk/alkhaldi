@@ -386,3 +386,18 @@ let getTheme = JSON.parse(localStorage.getItem("PageTheme"));
 if(getTheme === "dark"){
 	document.body.classList = "dark-mode";
 }
+
+
+function timeLine(){
+	$('.slick', '.vertical-slider').slick({
+		vertical: true,
+		// autoplay:true,
+		verticalSwiping: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		prevArrow: false,
+		nextArrow: false,
+	  });
+}
+

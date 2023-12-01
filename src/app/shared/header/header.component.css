@@ -40,9 +40,9 @@
     transition: background-color 0.3s ease-in-out;
 }
 
-.header.sticky-header {
+.header.sticky-header{
     background-color: #ffff;
     position: fixed;
     box-shadow: 0 0 20px 2px #00000029;
+    z-index: 9999;
 }
-
