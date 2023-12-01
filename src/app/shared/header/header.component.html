@@ -1,22 +1,22 @@
 	<!-- Dark Light Start -->
 	<div class="switch__tab">
-		<span class="switch__tab-btn active light-mode-title">Light</span>
+		<!-- <span class="switch__tab-btn active light-mode-title">Light</span> -->
 		<span class="mode__switch" onclick="darkLight()"><span></span></span>
-		<span class="switch__tab-btn dark-mode-title">Dark</span>
+		<!-- <span class="switch__tab-btn dark-mode-title">Dark</span> -->
 	</div>
-	<!-- Dark Light End -->
+	<!-- Dark Light End --> 
 
-    <header class="header">
+    <header class="header" [class.sticky-header]="isScrolled">
         <div class="container">
             <div class="row no-gutters header-row">
                 <div class="col-6">
-                    <a href="#" class="header__logo">
+                    <a routerLink="" class="header__logo">
                         <img class="header__logo-img header-logo-dark" src="assets/img/logo/logo-black.svg">
                         <img class="header__logo-img header-logo-light" src="assets/img/logo/logo-white.svg">
                     </a>
                 </div>
                 <div class="col-6 position-static">
-                    <a class="burger-btn" href="javascript:void(0)"></a>
+                    <a class="burger-btn" routerLink=""></a>
                 </div>
             </div>
         </div>
@@ -29,7 +29,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <a class="menu-overlay__close" href="javascript:void(0)">X</a>
-                        <a href="#" class="header__logo">
+                        <a routerLink="" class="header__logo">
                             <img class="header__logo-img" src="assets/img/logo/logo-black.svg" style="width:160px;">
                         </a>
                     </div>
@@ -37,36 +37,57 @@
                         <div class="accordion">
                             <div class="accordion__accordion-inner">
                                 <li class="menu-overlay__item">
-                                    <a href="#" class="menu-overlay__link">
+                                    <a routerLink="" class="menu-overlay__link">
                                         Home
                                     </a>
                                 </li>
                             </div>
                             <div class="accordion__accordion-inner">
                                 <li class="menu-overlay__item">
-                                    <a href="#" class="menu-overlay__link">
-                                        About Us
+                                    <a routerLink="" class="menu-overlay__link">
+                                        WHO WE ARE
                                     </a>
                                 </li>
                             </div>
                             <div class="accordion__accordion-inner">
                                 <li class="menu-overlay__item">
-                                    <a href="#" class="menu-overlay__link">
-                                        Images
+                                    <a routerLink="" class="menu-overlay__link">
+                                       TEAM
                                     </a>
                                 </li>
                             </div>
                             <div class="accordion__accordion-inner">
                                 <li class="menu-overlay__item">
-                                    <a href="#" class="menu-overlay__link">
-                                        Contact Us
+                                    <a routerLink="" class="menu-overlay__link">
+                                        CLIENTS
                                     </a>
                                 </li>
                             </div>
                             <div class="accordion__accordion-inner">
                                 <li class="menu-overlay__item">
-                                    <a href="#" class="menu-overlay__link">
-                                        AR
+                                    <a routerLink="" class="menu-overlay__link">
+                                      SERVICES
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="accordion__accordion-inner">
+                                <li class="menu-overlay__item">
+                                    <a routerLink="" class="menu-overlay__link">
+                                      GALLERY
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="accordion__accordion-inner">
+                                <li class="menu-overlay__item">
+                                    <a routerLink="" class="menu-overlay__link">
+                                      CAREER
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="accordion__accordion-inner">
+                                <li class="menu-overlay__item">
+                                    <a routerLink="" class="menu-overlay__link">
+                                      CONTACT US
                                     </a>
                                 </li>
                             </div>

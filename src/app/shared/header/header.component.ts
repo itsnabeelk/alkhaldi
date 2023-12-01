@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 // declare function scriptMain(): void;
 // declare function bannerScript(): void;
 @Component({
@@ -9,6 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit {
+
+
+  isScrolled = false;
+
+  @HostListener('window:scroll')
+  onWindowScroll() {
+    this.isScrolled = window.pageYOffset > 0;
+  }
+
+
   ngOnInit(): void {
     const burgerBtn = document.querySelector('.burger-btn') as HTMLElement;
     const menuWrapper = document.querySelector('.menu-wrapper') as HTMLElement;

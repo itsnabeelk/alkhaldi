@@ -176,6 +176,7 @@ h1 {
   color: var(--text-heading-color);
   font-family: var(--heading-font);
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -186,6 +187,7 @@ h2 {
   color: var(--text-heading-color);
   font-family: var(--heading-font);
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -1189,7 +1191,7 @@ Dark Light Switch CSS
   font-weight: 500;
   display: flex;
   align-items: center;
-  right: 0;
+  right: 35px;
   top: 52%;
   transform: translateY(-50%) translateX(50px) rotate(90deg);
   z-index: 3;
@@ -1211,7 +1213,7 @@ Dark Light Switch CSS
   display: inline-block;
   position: relative;
   margin: 0 10px;
-  background: var(--primary-color-1);
+  background: var(--primary-color-2);
   transform: translateY(0px);
   border-radius: 35px;
   cursor: pointer;
@@ -1248,11 +1250,12 @@ Dark Light Switch CSS
   position: absolute;
   top: 8px;
   right: 54px;
-  background-image: url("../img/icon/sun.png");
+  background-image: url("../img/icon/sun-white.png");
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
   background-size: cover;
+  filter: invert(1);
 }
 .mode__switch span::after {
   content: "";
@@ -6109,14 +6112,11 @@ filter: grayscale(1);
   transition: 0.4s;
   opacity: 0;
 }
-.services__one-item:before,
-.services__one-item2:before,
-.services__one-item3:before,
-.services__one-item4:before {
+.services__one-item:before, .services__one-item2:before, .services__one-item3:before, .services__one-item4:before {
   position: absolute;
   content: "";
   top: 0;
-  background: #0000007d;
+  background: #00463f7a;
   transition: 0.4s;
   left: 0;
   right: 0;
@@ -6163,8 +6163,8 @@ filter: grayscale(1);
 .services__one-item2:hover,
 .services__one-item3:hover,
 .services__one-item4:hover    {
-  background: var(--primary-color-1);
-  border-color: var(--primary-color-1);
+  background: var(--primary-color-2);
+  border-color: var(--primary-color-2);
   transform: translateY(-10px);
 }
 .services__one-item:hover h4,
@@ -11937,6 +11937,13 @@ Error CSS
   z-index: 999;
 }
 
+.services__one-item ,
+.services__one-item2 ,
+.services__one-item3 ,
+.services__one-item4 {
+ background-position: center;
+ background-size: cover;
+}
 .services__one-item p,
 .services__one-item2 p,
 .services__one-item3 p,
@@ -12057,4 +12064,48 @@ Error CSS
   height: 100%;
   width: 100%;
   z-index: 9999;
+}
+
+.dark-mode .subtitle-one,
+.subtitle-two,
+.subtitle-three {
+  color: var(--primary-color-2);
+}
+.dark-mode .subtitle-one::before,
+.subtitle-two::before,
+.subtitle-three::before {
+  background: var(--primary-color-2);
+}
+.dark-mode .subtitle-one::after,
+.subtitle-two::after,
+.subtitle-three::after {
+  background: var(--primary-color-2);
+}
+.fact-bg {
+  padding: 110px 25px 75px 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tpfact__icon {
+  float: left;
+  margin-right: 20px;
+}
+.tpfact__icon i {
+  font-size: 60px;
+  color: var(--tp-heading-primary);
+}
+
+
+/* For Webkit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 10px; /* Adjust the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00463f;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #bd9e55;
 }
