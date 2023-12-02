@@ -325,7 +325,21 @@ function scriptMain(){
 	});
 
 	///=============  Isotope  =============\\\
-	
+	$(document).ready(function() {
+		var $grid = $('.conbix__filter-active').isotope();
+		
+		$('.conbix__filter-button').on('click', 'button', function() {
+		  var filterValue = $(this).attr('data-filter');
+		  $grid.isotope({
+			filter: filterValue
+		  });
+		});
+		
+		$('.conbix__filter-button').on('click', 'button', function() {
+		  $(this).siblings('.active').removeClass('active');
+		  $(this).addClass('active');
+		});
+	  });
 })(jQuery);
 
 }
@@ -361,3 +375,18 @@ function timeLine(){
 	  });
 }
 
+function UploadbTN(){
+	$('#chooseFile').bind('change', function () {
+		var filename = $("#chooseFile").val();
+		if (/^\s*$/.test(filename)) {
+		  $(".file-upload").removeClass('active');
+		  $("#noFile").text("No file chosen..."); 
+		}
+		else {
+		  $(".file-upload").addClass('active');
+		  $("#noFile").text(filename.replace("C:\\fakepath\\", "")); 
+		}
+	  });
+}
+
+  
