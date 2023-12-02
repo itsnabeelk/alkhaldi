@@ -1,0 +1,21 @@
+.about__solution {
+    position: relative;
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80px;
+}
+
+.timeline-about {
+    top: 120px;
+    position: relative;
+}
+.section-padding {
+    top: 50px;
+}

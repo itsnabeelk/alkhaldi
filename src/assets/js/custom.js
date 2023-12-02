@@ -117,6 +117,7 @@ function scriptMain(){
 		loop: true,	
 		slidesPerView: 2,
 		spaceBetween: 20,
+		autoplay:true,
         pagination: {
           el: ".swiper-pagination",
 		  clickable: true,
@@ -198,6 +199,7 @@ function scriptMain(){
 		slidesPerView: 4,
 		loop: true,
 		speed: 1500,
+		autoplay:true,
 		spaceBetween: 30,
 		navigation: {
 			nextEl: '.swiper-button-next',
@@ -227,6 +229,7 @@ function scriptMain(){
 		slidesPerView: 3,
 		loop: true,
 		speed: 1500,
+		autoplay:true,
 		spaceBetween: 30,
 		navigation: {
 			nextEl: '.swiper-button-next',
@@ -320,52 +323,9 @@ function scriptMain(){
 	$(window).on("load", function() {
 		$(".theme-loader").fadeOut(500);
 	});
-	///============= Scroll To Top =============\\\
-	var scrollPath = document.querySelector('.scroll-up path');
-	var pathLength = scrollPath.getTotalLength();
-	scrollPath.style.transition = scrollPath.style.WebkitTransition = 'none';
-	scrollPath.style.strokeDasharray = pathLength + ' ' + pathLength;
-	scrollPath.style.strokeDashoffset = pathLength;
-	scrollPath.getBoundingClientRect();
-	scrollPath.style.transition = scrollPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
-	var updatescroll = function() {
-		var scroll = $(window).scrollTop();
-		var height = $(document).height() - $(window).height();
-		var scroll = pathLength - (scroll * pathLength / height);
-		scrollPath.style.strokeDashoffset = scroll;
-	}
-	updatescroll();
-	$(window).scroll(updatescroll);
-	var offset = 50;
-	var duration = 950;
-	jQuery(window).on('scroll', function() {
-		if(jQuery(this).scrollTop() > offset) {
-			jQuery('.scroll-up').addClass('active-scroll');
-		} else {
-			jQuery('.scroll-up').removeClass('active-scroll');
-		}
-	});
-	jQuery('.scroll-up').on('click', function(event) {
-		event.preventDefault();
-		jQuery('html, body').animate({
-			scrollTop: 0
-		}, duration);
-		return false;
-	});
+
 	///=============  Isotope  =============\\\
-	$(window).on('load', function(){
-		var $grid = $('.conbix__filter-active').isotope();
-		$('.conbix__filter-button').on('click', 'button', function () {
-			var filterValue = $(this).attr('data-filter');
-			$grid.isotope({
-				filter: filterValue
-			});
-		});
-		$('.conbix__filter-button').on('click', 'button', function () {
-			$(this).siblings('.active').removeClass('active');
-			$(this).addClass('active');
-		});
-   });		
+	
 })(jQuery);
 
 }

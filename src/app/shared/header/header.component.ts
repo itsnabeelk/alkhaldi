@@ -25,6 +25,7 @@ export class HeaderComponent implements OnInit {
     // Toggle the menu overlay
     function toggleMenu() {
       menuWrapper.style.display = 'block';
+      window.scrollTo(0, 0);
     }
   
     // Close the menu overlay
