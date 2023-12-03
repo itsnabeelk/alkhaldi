@@ -6,6 +6,11 @@ import { TeamComponent } from './pages/team/team.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { CareerComponent } from './pages/career/career.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { CompaniesComponent } from './pages/companies/companies.component';
+import { Company2Component } from './pages/companies/company2/company2.component';
+import { Company3Component } from './pages/companies/company3/company3.component';
+import { Company4Component } from './pages/companies/company4/company4.component';
+import { Company5Component } from './pages/companies/company5/company5.component';
 
 export const routes: Routes = [
     {
@@ -39,5 +44,25 @@ export const routes: Routes = [
     {
         path: 'contact',
         component: ContactComponent,
+    },
+    {
+        path: 'companies',
+        component: CompaniesComponent,
+    },
+    {
+        path: 'company2',
+        component: Company2Component,
+    },
+    {
+        path: 'company3',
+        component: Company3Component,
+    },
+    {
+        path: 'company4',
+        component: Company4Component,
+    },
+    {
+        path: 'company5',
+        component: Company5Component,
     },
 ];

@@ -6824,7 +6824,7 @@ Get In Touch Three CSS
 }
 .getIn__touch-three-left-title p {
   color: var(--color-4);
-  max-width: 530px;
+  /* max-width: 530px; */
 }
 .getIn__touch-three-left-video {
   margin-top: 55px;
@@ -11496,13 +11496,13 @@ All Side Bar CSS
   font-size: 16px;
   line-height: 16px;
 }
-.all__sidebar-item-solution ul li a:hover {
+.all__sidebar-item-solution ul li .active{
   color: var(--text-white);
   background: var(--primary-color-1);
   border-color: var(--primary-color-1);
   padding-left: 20px;
 }
-.all__sidebar-item-solution ul li a:hover i {
+.all__sidebar-item-solution ul li .active i {
   opacity: 1;
   margin-left: 0;
 }
