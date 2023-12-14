@@ -19,3 +19,28 @@
 .section-padding {
     top: 50px;
 }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #00463f;
+    border-color: transparent;
+}
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    background: 0 0;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    font-weight: 600;
+    padding: 0 25px;
+    line-height: 48px;
+    color: var(--text-heading-color);
+    border: 1px solid var(--border-color-4);
+    box-shadow: 0px 9px 18px rgba(24, 16, 16, 0.05);
+    margin: 5px;
+    transition: 0.4s;
+}
+
+@media (max-width:992px) {
+    .nav-tabs{
+        justify-content: center;
+    }
+}

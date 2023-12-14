@@ -11,7 +11,7 @@
 							<img class="two" src="assets/img/about/about-2.jpg" alt="">
 						</div>
 						<div class="about__one-left-experience">
-							<h1><span class="counter">1967</span></h1>
+							<h1><span class="counter">1972</span></h1>
 							<h6>SINCE</h6>
 						</div>
 					</div>
@@ -26,7 +26,7 @@
 						</div>
 						<div class="about__one-right-btn">
 							<div>
-								<a class="btn-one" routerLink="">Discover More<i class="far fa-chevron-double-right"></i></a>
+								<a class="btn-one" [routerLink]="['about']">Discover More<i class="far fa-chevron-double-right"></i></a>
 							</div>
 						</div>
 					</div>
@@ -99,7 +99,7 @@
 		<img class="getIn__touch-three-shape left-right-animate2" src="assets/img/shape/getInTouchThree.png" alt="">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-7 col-lg-7 lg-mb-50">
+				<div class="col-xl-10 col-lg-10 lg-mb-50">
 					<div class="getIn__touch-three-left">
 						<div class="getIn__touch-three-left-title">
 							<h2>Chairman Message</h2>	
@@ -108,7 +108,7 @@
 
 							</p>
 							<p><B>HAMOUD MUBARAK Z.  AL-KHALDI</B></p>
-							<a class="btn-one mt-5" routerLink="">Know More<i class="far fa-chevron-double-right"></i></a>
+							<a class="btn-one mt-5" [routerLink]="['management']">Know More<i class="far fa-chevron-double-right"></i></a>
 						</div>
 					</div>
 				</div>
@@ -131,7 +131,7 @@
 					<div class="portfolio__area-title t-center">
 						<span class="subtitle-one">Company</span>
 						<h2>Industries We Serve</h2>
-						<a class="btn-one mt-4" routerLink="">All SECTORS<i class="far fa-chevron-double-right"></i></a>
+						<a class="btn-one mt-4" [routerLink]="['companies']">All SECTORS<i class="far fa-chevron-double-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -143,10 +143,10 @@
 								<img src="assets/img/sectors/1.jpg" alt="">
 								<div class="portfolio__area-item-content">
 									<div class="portfolio__area-item-content-title">
-										<h4><a routerLink="">Building Materials</a></h4>
+										<h4><a  [routerLink]="['companies']">Building Materials</a></h4>
 									</div>
 									<div class="portfolio__area-item-content-icon">
-										<a routerLink=""><img src="assets/img/icon/up-arrow.png" alt=""></a>
+										<a  [routerLink]="['companies']"><img src="assets/img/icon/up-arrow.png" alt=""></a>
 									</div>
 								</div>
 							</div>
@@ -154,10 +154,10 @@
 								<img src="assets/img/sectors/2.jpg" alt="">
 								<div class="portfolio__area-item-content">
 									<div class="portfolio__area-item-content-title">
-										<h4><a routerLink="">Oil & Gas</a></h4>
+										<h4><a  [routerLink]="['companies']">Oil & Gas</a></h4>
 									</div>
 									<div class="portfolio__area-item-content-icon">
-										<a routerLink=""><img src="assets/img/icon/up-arrow.png" alt=""></a>
+										<a  [routerLink]="['companies']"><img src="assets/img/icon/up-arrow.png" alt=""></a>
 									</div>
 								</div>
 							</div>
@@ -165,10 +165,10 @@
 								<img src="assets/img/sectors/3.jpg" alt="">
 								<div class="portfolio__area-item-content">
 									<div class="portfolio__area-item-content-title">
-										<h4><a routerLink="">Real Estate</a></h4>
+										<h4><a  [routerLink]="['companies']">Real Estate</a></h4>
 									</div>
 									<div class="portfolio__area-item-content-icon">
-										<a routerLink=""><img src="assets/img/icon/up-arrow.png" alt=""></a>
+										<a  [routerLink]="['companies']"><img src="assets/img/icon/up-arrow.png" alt=""></a>
 									</div>
 								</div>
 							</div>
@@ -176,10 +176,10 @@
 								<img src="assets/img/sectors/4.jpg" alt="">
 								<div class="portfolio__area-item-content">
 									<div class="portfolio__area-item-content-title">
-										<h4><a routerLink="">Transportation & logistics</a></h4>
+										<h4><a  [routerLink]="['companies']">Transportation & logistics</a></h4>
 									</div>
 									<div class="portfolio__area-item-content-icon">
-										<a routerLink=""><img src="assets/img/icon/up-arrow.png" alt=""></a>
+										<a  [routerLink]="['companies']"><img src="assets/img/icon/up-arrow.png" alt=""></a>
 									</div>
 								</div>
 							</div>
@@ -192,7 +192,7 @@
 	<!-- Portfolio Area End -->
 
 	<!-- Services Area Start -->
-	<div class="services__one section-padding pt-100">
+	<!-- <div class="services__one section-padding pt-100">
 		<div class="container">
 			<div class="row align-items-end mb-70">
 				<div class="col-xl-7 col-lg-8 lg-mb-30">
@@ -238,7 +238,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- Services Area End -->
 
 	<!-- Blog Area Start -->
@@ -259,21 +259,21 @@
 				<div class="col-xl-4 col-lg-6 xl-mb-30">
 					<div class="blog__one-item">
 						<div class="blog__one-item-image">
-							<a routerLink=""><img src="assets/img/blog/blog-1.jpg" alt=""></a>
+							<a routerLink=""><img src="assets/img/news/blog-1.jpg" alt=""></a>
 							<div class="blog__one-item-image-date">
 								<span class="text-three">23</span>
 								<span class="text-five">Dec</span>
 							</div>
 						</div>
 						<div class="blog__one-item-content">
-							<h4><a routerLink="">Lorem ipsum dolor, sit amet consectetur adipisicing elit </a></h4>
+							<h4><a routerLink="">Al-Khalidi Group celebrates Saudi Founding Day 2023</a></h4>
 						</div>
 					</div>
 				</div>
 				<div class="col-xl-4 col-lg-6 lg-mb-30">
 					<div class="blog__one-item">
 						<div class="blog__one-item-image">
-							<a routerLink=""><img src="assets/img/blog/blog-2.jpg" alt=""></a>
+							<a routerLink=""><img src="assets/img/news/blog-2.jpg" alt=""></a>
 							<div class="blog__one-item-image-date">
 								<span class="text-three">20</span>
 								<span class="text-five">Dec</span>
@@ -287,7 +287,7 @@
 				<div class="col-xl-4 col-lg-6">
 					<div class="blog__one-item">
 						<div class="blog__one-item-image">
-							<a routerLink=""><img src="assets/img/blog/blog-3.jpg" alt=""></a>
+							<a routerLink=""><img src="assets/img/news/blog-3.jpg" alt=""></a>
 							<div class="blog__one-item-image-date">
 								<span class="text-three">17</span>
 								<span class="text-five">Dec</span>
