@@ -13,6 +13,7 @@ import { Company4Component } from './pages/companies/company4/company4.component
 import { Company5Component } from './pages/companies/company5/company5.component';
 import { Company7Component } from './pages/companies/company7/company7.component';
 import { Company6Component } from './pages/companies/company6/company6.component';
+import { NewsComponent } from './pages/news/news.component';
 
 export const routes: Routes = [
     {
@@ -46,6 +47,10 @@ export const routes: Routes = [
     {
         path: 'contact',
         component: ContactComponent,
+    },
+    {
+        path: 'news',
+        component: NewsComponent,
     },
     {
         path: 'companies',

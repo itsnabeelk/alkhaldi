@@ -50,12 +50,13 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
-  .slick .item {
-    float: left;
-    background-color: #00463f9c;
-    text-align: center;
-    position: relative;
-  }
+.slick .item {
+  float: left;
+  background-color: #00463f9c;
+  text-align: center;
+  position: relative;
+  width: 100% !important;
+}
  .overlay-slider{
     position: absolute;
     width:100%;
@@ -358,3 +359,25 @@ a:hover{
 }
 
 
+.team__area-item-image p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 100px;
+  padding: 0 30px;
+  color: #fff;
+  display: none;
+  transition: 0.5s ease;
+  z-index: 9;
+}
+
+.team__area-item:hover .team__area-item-image p {
+  display: block;
+  transition: 0.5s ease-in;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 95px;
+}

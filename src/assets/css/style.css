@@ -11327,10 +11327,8 @@ Copyright One CSS
   font-size: 15px;
   line-height: 26px;
 }
-.copyright__one p a,
-.copyright__two p a,
-.copyright__three p a {
-  color: var(--primary-color-1);
+.copyright__one p a, .copyright__two p a, .copyright__three p a {
+  color: #bd9e55;
   text-decoration: underline;
   margin: 0 2px;
 }
