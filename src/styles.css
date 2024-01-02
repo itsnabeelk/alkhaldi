@@ -188,7 +188,7 @@ a:hover{
   }
   
   .slick-dots li:nth-child(2):before {
-    content: "2000";
+    content: "1975";
     font-size: 14px;
     vertical-align: middle;
     margin-top: 7px;
@@ -199,7 +199,7 @@ a:hover{
   }
   
   .slick-dots li:nth-child(3):before {
-    content: "2005";
+    content: "1977";
     font-size: 14px;
     vertical-align: middle;
     margin-top: 7px;
@@ -210,7 +210,7 @@ a:hover{
   }
   
   .slick-dots li:nth-child(4):before {
-    content: "2010";
+    content: "2003";
     font-size: 14px;
     vertical-align: middle;
     margin-top: 7px;
@@ -221,7 +221,7 @@ a:hover{
   }
   
   .slick-dots li:nth-child(5):before {
-    content: "2015";
+    content: "2013";
     font-size: 14px;
     vertical-align: middle;
     margin-top: 7px;
@@ -232,7 +232,7 @@ a:hover{
   }
   
   .slick-dots li:nth-child(6):before {
-    content: "2020";
+    content: "2014";
     font-size: 14px;
     vertical-align: middle;
     margin-top: 7px;
@@ -243,7 +243,7 @@ a:hover{
   }
   
   .slick-dots li:nth-child(7):before {
-    content: "2022";
+    content: "2016";
     font-size: 14px;
     vertical-align: middle;
     margin-top: 7px;
@@ -254,7 +254,7 @@ a:hover{
   }
   
   .slick-dots li:nth-child(8):before {
-    content: "2023";
+    content: "2017";
     font-size: 14px;
     vertical-align: middle;
     margin-top: 7px;
@@ -265,15 +265,33 @@ a:hover{
   }
 
   .slick-dots li:nth-child(9):before {
-    content: "2026";
+    content: "2019";
     font-size: 14px;
     vertical-align: middle;
     margin-top: 7px;
     display: inline-block;
     color: #fff;
-    opacity: 0;
     cursor: pointer;
-    display: none;
+  }
+
+  .slick-dots li:nth-child(10):before {
+    content: "2021";
+    font-size: 14px;
+    vertical-align: middle;
+    margin-top: 7px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .slick-dots li:nth-child(11):before {
+    content: "2023";
+    font-size: 14px;
+    vertical-align: middle;
+    margin-top: 7px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
   }
   
   .slick-active:before {
@@ -380,4 +398,9 @@ a:hover{
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   height: 95px;
+}
+
+.all__sidebar-item .company-logo{
+ width:50%;
+ margin-bottom: 50px;
 }
