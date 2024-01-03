@@ -4,7 +4,9 @@ a{
 a:hover{
     cursor: pointer !important;
 }
-
+body {
+overflow-x: hidden;
+}
 .banner-video {
     position: relative;
     width: 100%;
@@ -49,6 +51,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .slick .item {
   float: left;
@@ -85,7 +88,8 @@ a:hover{
   .slick-list {
     position: relative;
     overflow: hidden;
-  }
+    height: 100vh !important;
+}
   
   .slick-dots {
     text-align: center;
@@ -118,10 +122,10 @@ a:hover{
   
   .slide {
     width: 100%;
-    height:85vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
-  }
+}
   
   .slide__card {
     position: absolute;
@@ -147,11 +151,10 @@ a:hover{
     border: 0;
 }
   
-  .slick-dots li {
-    margin-top: 45px;
-    margin-right: -22px;
-  }
-  
+.slick-dots li {
+  margin-top: 30px;
+  margin-right: -22px;
+}
   .slick-dots li:nth-child(1) {
     margin-top: -7px;
   }
@@ -271,6 +274,7 @@ a:hover{
     margin-top: 7px;
     display: inline-block;
     color: #fff;
+    opacity: 0.7;
     cursor: pointer;
   }
 
@@ -281,6 +285,7 @@ a:hover{
     margin-top: 7px;
     display: inline-block;
     color: #fff;
+    opacity: 0.7;
     cursor: pointer;
   }
 
@@ -289,6 +294,7 @@ a:hover{
     font-size: 14px;
     vertical-align: middle;
     margin-top: 7px;
+    opacity: 0.7;
     display: inline-block;
     color: #fff;
     cursor: pointer;
@@ -314,10 +320,11 @@ a:hover{
       display: flex;
       left: 15px;
       right: 0;
-      flex-direction: row;
       top: 130px;
+      flex-direction: row;
+      flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
+      line-height: 25px;
   }
   .slick-dots li {
     margin-top: 0;
@@ -404,3 +411,7 @@ a:hover{
  width:50%;
  margin-bottom: 50px;
 }
+
+/* 
+@media (max-width:500px) {
+} */

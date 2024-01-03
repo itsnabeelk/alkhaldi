@@ -6783,7 +6783,7 @@ Get In Touch Three CSS
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  /* height: 70vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6792,6 +6792,7 @@ Get In Touch Three CSS
 @media (max-width:680px) {
   .getIn__touch-three {
     background-position-x: -900px;
+    height:100vh;
   }
 }
 
@@ -11546,7 +11547,7 @@ All Side Bar CSS
   padding: 30px;
   margin: 0 40px;
   margin-top: -190px;
-  background: var(--bg-white);
+  background: #ffffffa6;
   position: relative;
   text-align: center;
 }
@@ -12046,6 +12047,7 @@ Error CSS
 .menu-overlay__link {
   color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .menu-overlay__link:focus {
   color: #BD9E55;
