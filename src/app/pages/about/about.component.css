@@ -44,3 +44,7 @@
         justify-content: center;
     }
 }
+
+.carousel-item img{
+    height: calc(60vh + 10px);
+  }

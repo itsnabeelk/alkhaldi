@@ -148,6 +148,10 @@ function scriptMain(){
 		loop: true,
 		speed: 2000,
 		spaceBetween: 30,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
 		autoplay: {
 			delay: 4500,
 			reverseDirection: true,
@@ -387,6 +391,8 @@ function UploadbTN(){
 		  $("#noFile").text(filename.replace("C:\\fakepath\\", "")); 
 		}
 	  });
+
+	  
 }
 
   
