@@ -47,4 +47,7 @@
 
 .carousel-item img{
     height: calc(60vh + 10px);
-  }
+}
+.slide {
+    height: 60vh !important;
+}
