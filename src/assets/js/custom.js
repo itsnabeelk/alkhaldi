@@ -395,4 +395,50 @@ function UploadbTN(){
 	  
 }
 
+
+function logoScript() {
+	// Slider version 1
+	$('.owl-carousel.version-1').owlCarousel({
+	  loop: true,
+	  margin: 15,
+	  autoplay: true,
+	  responsiveClass: true,
+	  responsive: {
+		0: {
+		  items: 2,
+		  nav: false // Hide navigation arrows
+		},
+		600: {
+		  items: 3,
+		  nav: false // Hide navigation arrows
+		},
+		1000: {
+		  items: 4,
+		  nav: false // Hide navigation arrows
+		}
+	  }
+	});
   
+	// Slider version 2
+	$('.owl-carousel.version-2').owlCarousel({
+	  loop: true,
+	  margin: 15,
+	  center: true,
+	  autoplay: true,
+	  responsiveClass: true,
+	  responsive: {
+		0: {
+		  items: 1,
+		  nav: false // Hide navigation arrows
+		},
+		600: {
+		  items: 2,
+		  nav: false // Hide navigation arrows
+		},
+		1000: {
+		  items: 3,
+		  nav: false // Hide navigation arrows
+		}
+	  }
+	});
+  }

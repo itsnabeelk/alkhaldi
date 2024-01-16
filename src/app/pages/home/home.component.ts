@@ -3,6 +3,7 @@ import { BannerComponent } from "../../component/banner/banner.component";
 import { TimelineComponent } from "../../component/timeline/timeline.component";
 import { RouterModule } from '@angular/router';
 declare function scriptMain(): void;
+declare function logoScript(): void;
 @Component({
     selector: 'app-home',
     standalone: true,
@@ -13,6 +14,7 @@ declare function scriptMain(): void;
 export class HomeComponent {
   ngOnInit(): void {
     scriptMain();
+    logoScript();
     window.addEventListener('load', () => {
       window.scrollTo(0, 0);
     });

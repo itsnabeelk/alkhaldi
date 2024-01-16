@@ -34,6 +34,8 @@
               "src/assets/css/swiper-bundle.min.css",
               "src/assets/css/magnific-popup.css",
               "src/assets/css/meanmenu.min.css",
+              "src/assets/css/owl.carousel.min.css",
+              "src/assets/css/owl.theme.default.min.css",
               "src/assets/css/style.css"
             ],
             "scripts": [
@@ -49,6 +51,7 @@
               "src/assets/js/isotope.pkgd.min.js",
               "src/assets/js/jquery.waypoints.min.js",
               "src/assets/js/jquery.meanmenu.min.js",
+              "src/assets/js/owl.carousel.min.js",
               "src/assets/js/custom.js"
             ]
           },
